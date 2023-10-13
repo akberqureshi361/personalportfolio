@@ -1,0 +1,269 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+a{
+   text-decoration: none;
+}
+html,body{
+    width: 100%;
+}
+:root{
+    --primery:#113946;
+    --textcolor:#BCA37F;
+    --bglight:#f8f3ea;
+}
+.margin-top-bottom{
+    margin: 40px 0;
+}
+.main{
+    background-color: #f8f3ea;
+    min-height: 100vh;
+    overflow: hidden;
+}
+/* 1st button start */
+.btn{
+    outline: 1px solid #ff057ee6;
+    color: #ff057ee6;
+    padding: 7px 34px;
+    transition: all 0.5s;
+    border-radius: 30px;
+}
+.btn:hover{
+    box-shadow: rgba(#ff057ee6, 0.2) 0px 8px 24px;
+    background-color: #ff057ee6;
+    color: white;
+}
+/* 1st button end */
+
+/* 1st button start */
+.btn2{
+    outline: 1px solid #113946;
+    color: white;
+    background-color: #113946;
+    padding: 7px 34px;
+    transition: all 0.5s;
+    border-radius: 30px;
+}
+.btn2:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: transparent;
+    color:var(--primery);
+}
+/* 1st button end */
+
+
+/* navigation start  */
+
+
+.nav-item:hover a{
+color:#ff057ee6 ;
+}
+.head-span{
+    color:#ff057ee6 ;
+}
+
+
+
+
+
+
+.ahad-img{
+    border-radius: 50%;
+    width: 77%;
+}
+
+ .p{
+    font-size: 30px;
+}
+ h3{
+    font-size: 50px;
+}
+h4{
+    font-size: 40px;
+    font-weight: 800;
+}
+.abotume h5{
+    font-size: 30px;
+    color:var(--textcolor);
+    
+}
+.abotume2 h5{
+    font-size: 30px;
+    color:var(--textcolor);
+    
+}
+.aboutecontent{   
+     display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.aboutecontent p span{
+    color: var(--textcolor);
+    font-size: 20px;
+    font-weight: 700;
+}
+.abotu1,.abotu2{
+
+    position: absolute;
+    height: 4px;
+    width: 50px;
+    background: var(--primery);
+    top: 50%;
+    /* left: 16%; */
+}
+.abotu1{
+    left: 16%;
+}
+.abotu2{
+    right: 16%;
+}
+.abotu3,.abotu4{
+    position: absolute;
+    height: 4px;
+    width: 50px;
+    background: var(--primery);
+    top: 50%;
+}
+.abotu3{
+    left: 31%;
+}
+.abotu4{
+    right: 31%;
+}
+
+
+.abotume,.abotume2{
+    position: relative;
+}
+.abotume::before{
+       width: 10px;
+       height: 5px ;
+       background-color: var(--primery);
+       position: absolute;
+       top: 0;
+       left: 30px;
+}
+
+
+
+/* section2 start  */
+.section2{
+    background-color:var(--bglight);
+    padding: 30px 0;
+}
+.abotume2 h5{
+   color: var(--primery);
+}
+
+
+
+
+  figure{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    margin:0;
+    transition: all 0.5s ;
+  }
+  figure>img{
+    width: 100% !important;
+    border-radius: 20px;
+    transition: all 0.5s ;
+    height: 100%;
+  }
+  figcaption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+   
+    background-color: rgba(255, 0, 0, 0.347);
+  
+    display: grid;
+    align-items: end;
+    /* font-size: 2.3rem;
+    font-weight: bold; */
+    color: #0000;
+    padding: .75rem;
+    background: var(--c,#0009);
+    clip-path: inset(0 var(--_i,100%) 0 0);
+    /* -webkit-mask:
+      linear-gradient(#000 0 0),
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    -webkit-mask-clip: text, padding-box; */
+    margin: -1px;
+    transition: all 0.5s ;
+  }
+  figure:hover figcaption{
+    --_i: 0%;
+    color: white;
+  }
+  figure:hover img {
+    transform: scale(1.2);
+  }
+  /* @supports not (-webkit-mask-clip: text) {
+    figure figcaption {
+     -webkit-mask: none;
+     color: #fff;
+    }
+  } */
+ 
+/* section2 end  */
+
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sticky{
+    padding: 5px 100px ;
+    background-color: var(--primery);
+    position: sticky;
+    top: 0;
+    color: white;
+    
+}
+nav.navbar.navbar-expand-lg.bg-tranparent.py-3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: all 0.5s;
+    
+}
+ .sticky  a {
+    color: #fff;
+}
+.margin1 {
+    margin-top: 110px;
+}
+.sticky> .active{
+    color: white !important;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: rgb(255 5 126 / 90%);
+}
+
+
+.footer{
+    padding: 40px ;
+    background-color: #113946;
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+
+
+       
